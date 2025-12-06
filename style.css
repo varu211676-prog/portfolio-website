@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     color: #333;
+    line-height: 1.5;
 }
 
 /* Header + Navigation */
@@ -49,6 +50,16 @@ main {
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* Profile photo */
+.profile-photo {
+    float: right;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 150px;
+    height: auto;
+}
+
 /* Bio-data table */
 .biodata-table {
     width: 100%;
@@ -87,4 +98,32 @@ button {
 
 button:hover {
     filter: brightness(0.9);
+}
+
+/* ✅ Mobile-friendly tweaks */
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 120px;
+    }
+
+    main {
+        margin: 10px auto;
+    }
 }

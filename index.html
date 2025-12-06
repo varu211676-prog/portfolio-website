@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- ✅ Important for mobile view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio - Home</title>
     <link rel="stylesheet" href="style.css">
+    <!-- ✅ Your custom JS (time-based greeting) -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -23,10 +27,10 @@
         <p>
             I am a <strong>3rd Year B.E. student</strong> pursuing 
             <strong>Computer Science and Engineering (CSE)</strong>.  
-            I am interested in web development and emerging technologies.
+            I am interested in web development, Artificial Intelligence, and app development.
         </p>
 
-        <!-- ✅ jQuery Greeting -->
+        <!-- ✅ Greeting (handled by script.js) -->
         <button id="greetBtn">Click for Greeting</button>
         <p id="greetMsg"></p>
     </section>
@@ -52,7 +56,7 @@
         <button id="toggleBtn">Show / Hide Extra Info</button>
         <p id="extraInfo" style="display:none;">
             I am a motivated student aiming to become a skilled software engineer.
-            I enjoy learning new technologies and working on practical projects.
+            I enjoy learning new technologies, Artificial Intelligence, and working on practical app development projects.
         </p>
     </section>
 </main>
@@ -64,20 +68,13 @@
 <!-- ✅ jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<!-- ✅ jQuery Code -->
+<!-- ✅ jQuery Code (only for toggle now) -->
 <script>
   $(document).ready(function () {
-
-      // Greeting feature
-      $("#greetBtn").click(function () {
-          $("#greetMsg").text("Hello! Welcome to my personal portfolio website.");
-      });
-
       // Show / Hide using jQuery
       $("#toggleBtn").click(function () {
           $("#extraInfo").slideToggle();
       });
-
   });
 </script>
 
