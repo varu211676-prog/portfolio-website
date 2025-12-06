@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Varun M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Resume</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ✅ Personal Details + Photo -->
+    <section class="card">
+        <img src="./photo.png"
+             alt="Varun M"
+             width="150"
+             style="float:right; margin-left:20px;
+             border:2px solid black; border-radius:8px;">
+
+        <h2>Personal Details</h2>
+        <p><strong>Name:</strong> Varun M</p>
+        <p><strong>Email:</strong> varu21167@gmail.com</p>
+        <p><strong>Phone:</strong> 8494933668</p>
+        <p><strong>Address:</strong> Andrahalli, Bangalore</p>
+
+        <div style="clear:both;"></div>
+    </section>
+
+    <section class="card">
+        <h2>Career Objective</h2>
+        <p>
+            To obtain a challenging position in the field of Computer Science where I can
+            apply my skills in Artificial Intelligence, Web Development, and Mobile
+            Application Development while continuously learning new technologies.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Educational Qualifications</h2>
+        <ul>
+            <li><strong>B.E – Computer Science and Engineering</strong> (3rd Year)</li>
+            <li><strong>Pre-University:</strong> East West PU College</li>
+            <li><strong>SSLC (10th):</strong> Good Will English High School</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Academic / Technical Projects</h2>
+        <ul>
+            <li>
+                <strong>AIClock – AI Powered Smart Clock</strong><br>
+                Developed an AI-based smart clock application with intelligent reminders,
+                voice interaction, and task management features.
+                <br>
+                <strong>Technologies Used:</strong> React Native, JavaScript, AI APIs
+                <br>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/varu211676-prog/AIClockV2" target="_blank">
+                    https://github.com/varu211676-prog/AIClockV2
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Achievements & Activities</h2>
+        <ul>
+            <li>Participated in a Hackathon and developed an AI-based application</li>
+            <li>Gained experience in teamwork, problem-solving, and rapid application development</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Areas of Interest</h2>
+        <ul>
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Mobile Application Development</li>
+            <li>AI-powered Smart Applications</li>
+            <li>Full Stack Web Development</li>
+            <li>Cloud Computing</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Languages: C, C++, Java, Python</li>
+            <li>Web: HTML, CSS, JavaScript, jQuery</li>
+            <li>Tools & Frameworks: React Native, Git, VS Code</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Online Profiles</h2>
+        <ul>
+            <li>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/varu211676-prog" target="_blank">
+                    https://github.com/varu211676-prog
+                </a>
+            </li>
+            <li>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/varun-m-3a856a332/" target="_blank">
+                    https://www.linkedin.com/in/varun-m-3a856a332/
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Declaration</h2>
+        <p>
+            I hereby declare that the information provided above is true and correct
+            to the best of my knowledge and belief.
+        </p>
+        <p><strong>Place:</strong> Bangalore</p>
+        <p><strong>Date:</strong> <span id="currentDate"></span></p>
+        <p><strong>Signature:</strong> Varun M</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Varun M. All rights reserved.</p>
+</footer>
+
+<!-- ✅ Auto date script -->
+<script>
+    const d = new Date();
+    document.getElementById("currentDate").textContent =
+        String(d.getDate()).padStart(2,'0') + "/" +
+        String(d.getMonth() + 1).padStart(2,'0') + "/" +
+        d.getFullYear();
+</script>
+
+</body>
+</html>

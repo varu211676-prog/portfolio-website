@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Personal Portfolio</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-data</a>
+    </nav>
+</header>
+
+<main>
+    <section class="card">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Varun M</p>
+        <p>
+            I am a <strong>3rd Year B.E. student</strong> pursuing 
+            <strong>Computer Science and Engineering (CSE)</strong>.  
+            I am interested in web development and emerging technologies.
+        </p>
+
+        <!-- ✅ jQuery Greeting -->
+        <button id="greetBtn">Click for Greeting</button>
+        <p id="greetMsg"></p>
+    </section>
+
+    <section class="card">
+        <h2>Education Summary</h2>
+        <ul>
+            <li><strong>B.E (CSE):</strong> 3rd Year</li>
+            <li><strong>Pre-University:</strong> East West PU College</li>
+            <li><strong>10th:</strong> Good Will English High School</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> varu21167@gmail.com</p>
+        <p><strong>Phone:</strong> 8494933668</p>
+        <p><strong>Address:</strong> Andrahalli, Bangalore</p>
+        <p><strong>Date of Birth:</strong> 24/09/2005</p>
+
+        <!-- ✅ jQuery Toggle Feature -->
+        <br>
+        <button id="toggleBtn">Show / Hide Extra Info</button>
+        <p id="extraInfo" style="display:none;">
+            I am a motivated student aiming to become a skilled software engineer.
+            I enjoy learning new technologies and working on practical projects.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Varun M. All rights reserved.</p>
+</footer>
+
+<!-- ✅ jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- ✅ jQuery Code -->
+<script>
+  $(document).ready(function () {
+
+      // Greeting feature
+      $("#greetBtn").click(function () {
+          $("#greetMsg").text("Hello! Welcome to my personal portfolio website.");
+      });
+
+      // Show / Hide using jQuery
+      $("#toggleBtn").click(function () {
+          $("#extraInfo").slideToggle();
+      });
+
+  });
+</script>
+
+</body>
+</html>
